@@ -18,8 +18,6 @@ os.system('clear')
 # open image
 try:
     im = Image.open(filename)
-
-# get mad at user
 except(FileNotFoundError):
     for _ in range(height - 1):
         for _ in range(int(width/6)):
