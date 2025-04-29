@@ -7,13 +7,13 @@ charset = ['0', '*', 'o', '.', ' ']
 # determine brightness interval based on charset
 brightness_interval = int(255 / len(charset)) + 1
 
-# get terminal dimensions
-width = os.get_terminal_size().columns
-height = os.get_terminal_size().lines - 1
-
 # get input and wipe terminal
 filename = input("Enter image filepath: ")
 os.system('clear')
+
+# get terminal dimensions
+width = os.get_terminal_size().columns
+height = os.get_terminal_size().lines - 1
 
 # open image
 try:
